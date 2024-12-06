@@ -1,0 +1,460 @@
+ body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    background-color: white;
+    color: black;
+
+}
+.nav-upper{
+    display: flex;
+    width: 100%;
+}
+.image-logo{
+    width: 9%;
+ padding: 1%;
+}
+.image-logo>img{
+    width: 60%;
+}
+.motors{
+    display: flex;
+    width: 10%;
+}
+.motors>i{
+    font-size: x-large;
+    margin: 10%;
+    color: gray;
+    margin-top: 18px;
+}
+.motors>p{
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+.nav-lower{
+    width: 100%;
+    display: flex;
+}
+.loct{
+    border: 1px solid gray;
+    display: flex;
+    width: 30%;
+    height: 7.5vh;
+    margin-left: 20px;
+
+}
+
+.loct>p{
+    margin-left: 20px;
+    padding-left: 10px;
+  width:25% ;
+  font-size: medium;
+}
+.loct>select{
+    height: 7vh;
+    border: 0px;
+    margin-left: 10%;
+    width: 60%;
+    font-size: large;
+}
+.search{
+    width: 41%;
+    height: auto;
+    margin-left: 20px;
+}
+.search>input{
+    width: 98%;
+    height: 6.5vh;
+}
+.search>input:placeholder-shown{
+    font-size: large;
+    padding-left: 10px;
+}
+.icons{
+  width: 5%;
+  border: 1px solid green; 
+  background-color: rgb(19, 81, 19);
+  color:white; 
+  text-align: center;
+  justify-content: center;
+  height: 5.5vh;
+  padding-top: 10px;
+  }
+.icons>i{
+    font-size: larger;
+}
+.btn{
+    display: flex;
+    width: 20%;
+    padding-left: 20px;
+    text-align: center;
+}
+.btn >a{
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 10%;
+}
+.sell-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; 
+    border: 3px solid transparent; 
+    border-radius: 50px;
+    padding: 8px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    font-size: larger;
+    cursor: pointer;
+    background: linear-gradient(to right, yellow, cyan, blue);
+    position: relative;
+    background-clip: padding-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .sell-btn::before {
+    content: '+';
+    font-size: 18px;
+    color: #003; /
+  }
+
+  .sell-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+  }
+  .poster{
+    width: 100%;
+    margin-left: 18px;
+  }
+.categories{
+    display: flex;
+    width: 100%;
+}
+
+.categories>div{
+    width: 20%;
+    padding-left: 40px
+
+}
+.categories>div>img{
+    height: 15vh;
+
+}
+.categories>div>p{
+    font-weight: bold;
+}
+#h3{
+    font-size: x-large;
+    margin-left: 40px;
+}
+#cards{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.cards1{
+    width: 30%;
+}
+.cards1>img{
+    width: 100%;
+    height: 30vh;
+}
+.cards2{
+    width: 100%;
+    margin-left: 10px;
+}
+.cards2>p{
+    width: 90%;
+
+}
+.p1{
+    font-weight: bold;
+}
+.p2{
+    color: grey;
+}
+@media (max-width:575px) { 
+    .image-logo{
+        width: 30%;
+     padding: 4%;
+     margin-left: 10px;
+    }
+    .image-logo>img{
+        width: 76%;
+    }
+    .motors{
+        width: 60%;
+    }
+    .motors>i{
+        font-size: large;
+    }
+    .motors>p{
+        font-size: medium;
+    }
+    .nav-lower{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        display: none;
+    }
+    
+    .loct{
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 6.5vh;
+        margin-left: 20px;
+    
+    }
+    
+    .loct>p{
+        margin-left: 20px;
+        padding-left: 10px;
+      width:100% ;
+      font-size: medium;
+    }
+    .loct>select{
+
+        height: 0vh;
+        border: 0px;
+        margin-left: 1%;
+        width: 90%;
+        font-size: small;
+    }
+    .search{
+        width: 88%;
+        height: auto;
+        margin-left: 20px;
+    }
+    .search>input{
+        width: 98%;
+        height: 6.5vh;
+    }
+    .search>input:placeholder-shown{
+        font-size: medium;
+        padding-left: 10px;
+    }
+    .icons{
+        display: none;
+    }   
+    .poster{
+        width: 100%;
+        margin-left: 9px;
+      }
+      .poster>img{
+        width: 90%;
+        height: 18vh;
+      }
+      .categories{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .categories>div{
+        width: 50%;
+        margin-left: 70px
+    
+    }
+    .categories>div>img{
+        height: 15vh;
+    
+    }
+    .categories>div>p{
+        font-weight: bold;
+        text-align: start;
+    }
+    #cards{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .cards1{
+        width: 100%;
+    }
+    .cards1>img{
+        width: 95%;
+        height: 30vh;
+    }
+    .cards2{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .cards2>p{
+        width: 90%;
+    
+    }
+    
+}
+ @media (min-width: 576px) and (max-width: 767px){
+    .image-logo{
+        width: 20%;
+     padding: 2%;
+     margin-left: 10px;
+    }
+    .image-logo>img{
+        width: 60%;
+    }
+    .motors{
+        width: 40%;
+    }
+    .motors>i{
+        font-size: large;
+        
+    }
+    .motors>p{
+        font-size: medium;
+    }
+    .image-logo{
+        width: 30%;
+     padding: 4%;
+     margin-left: 10px;
+    }
+    .image-logo>img{
+        width: 76%;
+    }
+    .motors{
+        width: 60%;
+    }
+    .motors>i{
+        font-size: large;
+        
+    }
+    .motors>p{
+        font-size: medium;
+    }
+    .nav-lower{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        display: none;
+    }
+    
+    .loct{
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 6.5vh;
+        margin-left: 20px;
+    
+    }
+    
+    .loct>p{
+        margin-left: 20px;
+        padding-left: 10px;
+      width:100% ;
+      font-size: medium;
+    }
+    .loct>select{
+
+        height: 0vh;
+        border: 0px;
+        margin-left: 1%;
+        width: 90%;
+        font-size: small;
+    }
+    .search{
+        width: 88%;
+        height: auto;
+        margin-left: 20px;
+    }
+    .search>input{
+        width: 98%;
+        height: 6.5vh;
+    }
+    .search>input:placeholder-shown{
+        font-size: medium;
+        padding-left: 10px;
+    }
+    .icons{
+        display: none;
+    }   
+    .poster{
+        width: 100%;
+        margin-left: 9px;
+      }
+      .poster>img{
+        width: 95%;
+        height: 18vh;
+ 
+ }
+ .categories{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.categories>div{
+    width: 50%;
+    margin-left: 70px
+
+}
+.categories>div>img{
+    height: 15vh;
+
+}
+.categories>div>p{
+    font-weight: bold;
+    text-align: start;
+}
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.cards1{
+    width: 100%;
+}
+.cards1>img{
+    width: 100%;
+    height: 30vh;
+}
+.cards2{
+    width: 100%;
+    margin-left: 10px;
+}
+.cards2>p{
+    width: 90%;
+
+}
+ }
+ @media (min-width: 768px) and (max-width: 991px){
+    .image-logo{
+        width: 15%;
+     padding: 2%;
+     margin-left: 10px;
+    }
+    .image-logo>img{
+        width: 60%;
+    }
+    .motors{
+        width: 15%;
+    }
+    .motors>i{
+        font-size: large;
+        
+    }
+    .motors>p{
+        font-size: medium;
+    }
+ }
+ @media (min-width: 992px) and (max-width: 1199px){
+
+ }
+ @media (min-width: 1200px){
+
+ } 
